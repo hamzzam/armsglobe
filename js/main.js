@@ -283,9 +283,9 @@ function initScene() {
 	loadGeoData( latlonData );				
 	console.timeEnd('loadGeoData');				
 
-	// console.time('buildDataVizGeometries');
-	// var vizilines = buildDataVizGeometries(timeBins);
-	// console.timeEnd('buildDataVizGeometries');
+	console.time('buildDataVizGeometries');
+	var vizilines = buildDataVizGeometries(timeBins);
+	console.timeEnd('buildDataVizGeometries');
 
 	visualizationMesh = new THREE.Object3D();
 	rotating.add(visualizationMesh);	

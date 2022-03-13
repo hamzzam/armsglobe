@@ -111,16 +111,16 @@ function attachMarkerToCountry( countryName, importance ){
 	// marker.nameLayerShorten = country.countryCode;;	
 	
 	var importExportText = "";
-	if(country.exportedAmount > 0 && country.importedAmount > 0) {
-	   importExportText += "imported:&nbsp;$" + numberWithCommas(country.importedAmount) + "<br />" +
-	       "exported:&nbsp;$"+numberWithCommas(country.exportedAmount);
-	} else if(country.exportedAmount > 0 && country.importedAmount == 0) {
-	   importExportText += "exported:&nbsp;$"+numberWithCommas(country.exportedAmount)+"<br />&nbsp;";
-	} else if(country.exportedAmount == 0 && country.importedAmount > 0) {
-	   importExportText += "imported:&nbsp;$"+numberWithCommas(country.importedAmount)+"<br />&nbsp;";
-	}
+	// if(country.exportedAmount > 0 && country.importedAmount > 0) {
+	//    importExportText += "imported:&nbsp;$" + numberWithCommas(country.importedAmount) + "<br />" +
+	//        "exported:&nbsp;$"+numberWithCommas(country.exportedAmount);
+	// } else if(country.exportedAmount > 0 && country.importedAmount == 0) {
+	//    importExportText += "exported:&nbsp;$"+numberWithCommas(country.exportedAmount)+"<br />&nbsp;";
+	// } else if(country.exportedAmount == 0 && country.importedAmount > 0) {
+	//    importExportText += "imported:&nbsp;$"+numberWithCommas(country.importedAmount)+"<br />&nbsp;";
+	// }
 
-	marker.importExportText = importExportText;
+	// marker.importExportText = importExportText;
 
 
 	var markerOver = function(e){

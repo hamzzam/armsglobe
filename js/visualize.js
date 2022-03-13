@@ -1,6 +1,6 @@
 function buildDataVizGeometries( linearData ){	
 
-	var loadLayer = document.getElementById('loading');
+	// var loadLayer = document.getElementById('loading');
 
 	for( var i in linearData ){
 		var yearBin = linearData[i].data;		
@@ -38,7 +38,7 @@ function buildDataVizGeometries( linearData ){
 		// console.log(loadLayer.innerHTML);
 	}			
 
-	loadLayer.style.display = 'none';	
+	// loadLayer.style.display = 'none';	
 }
 
 function getVisualizedMesh( linearData, year, countries, exportCategories, importCategories ){
